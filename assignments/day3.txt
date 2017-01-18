@@ -1,0 +1,83 @@
+
+
+ -----------------------------------xml httpRequest---------------------------------
+
+   Synatax  ---     new XMLhttpRequest();
+   methods  ---     object();
+                    abort();
+                    open(method,url,async);                         Note:- async is false by default.
+                    send()
+                    send(string)                                    Note:- send is used for get request.
+                    setRequestHeader();
+
+
+
+   properties --    1) onreadystatechange = function(){}
+                       async = true             only
+
+                    2) readystates -- not initailsied
+                                      connection established
+                                      request received
+                                      processing
+                                      request finished
+
+                    3) ResponseText
+                    4) ResponceXML
+
+  status      --    200  --   Success Request
+                    401  --   bad request header
+                    400  --   bad request
+                    403  --   forbidden
+
+ -----------------------------------examples-----------------------
+
+
+  var xhttp = new XMLhttpRequest();
+      xhttp.open(get,url,true);
+      xhttp.send();
+
+
+      content-type -->  headers
+                        application/json
+                        multipart/data
+
+
+-----------------------------------------Callback Functions----------------------------------------
+
+     func1(data,callback);
+     func2()  ----  callback function
+
+
+    reponseXML
+         xmlDoc = xhttp.responseXML;
+         var x = xmlDoc.getElementByTagName("name");
+
+
+             getAllRespnseHeader()
+             get RespnseHeader("header_name");
+
+
+----------------------------------------JSON--------------------------------------------------------
+
+  full-form : JavaScript Object Notation
+
+  syntax  -->   var myObj = {name:"abc", age:30}
+  accesing data   ->> 1) myobj.name;
+                      2) myobj[name];
+
+  deleting data    --> delete myobj.name;                          deletes name parameter;
+
+                       note:-  values cannot be Undefined, function etc.
+
+
+  send-data -->  myObj = {A:'a',B:'b'}   Note:- even arrays can be stringified.
+                 var newJSON = JSON.stringify(myobj);   output ---   '{A:'a',B:'b'}' -->this is sent
+
+
+  Receiving data -->  string is received at receiver end;
+                       var myObj = JSON.parse(mystr);
+
+                  -->  to parse date
+                          var dat = new Date("string");
+                  -->  to parse function
+                       obj ={key1:function(){}}

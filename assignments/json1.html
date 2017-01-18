@@ -1,0 +1,27 @@
+<!Doctype html>
+<html>
+ <head>
+
+
+   </head>
+
+   <body>
+    <form method="get">
+       Name  <input id="nm1" type="text" placeholder="Name"  name="fname" />
+       Email <input id="nm2" type="text" placeholder="Email" name="email"/>
+       <br><input type="button" onclick="run()" />
+
+     </form>
+
+     <script>
+     function run(){
+      console.log("all Good");
+      var f1=document.getElementById("nm1").value;
+      var f2=document.getElementById("nm2").value;
+      var js1 ={name:f1,class:f2};
+      var x=JSON.stringify(js1);
+      console.log("even good "+x);
+    }
+     </script>
+   </body>
+   </html>

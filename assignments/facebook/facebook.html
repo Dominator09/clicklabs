@@ -1,0 +1,358 @@
+<!Doctype html>
+<html>
+   <head>
+      <style>
+
+       body{
+          margin: 0px;
+          padding: 0px;
+          background-color: #ebeef4;
+        }
+        .border{
+              border: 1px solid blue;
+          }
+
+
+        #header{
+             padding-bottom: 1vh;
+             background-color: #3b5998;
+             }
+
+         .headpara{
+                display: inline-block;
+                color  : white;
+                vertical-align: top;
+                font-size: 3vw;
+                margin: 0px;
+                font-weight : bold;
+                font-family: Helvetica, Arial, sans-serif;
+                margin-left : 15vw;
+                padding: 0px;
+                padding-top: 3vh;
+             }
+
+         .headerdiv{
+              margin : 0px;
+              padding: 0px;
+              margin-left : 30vw;
+              display: inline-block;
+              vertical-align: top;
+              }
+
+
+        .headerdiv div{
+              font-size: 14px;
+              width : 12vw;
+              color : white;
+              margin-top: 1.5vh;
+              display: inline-block;
+              vertical-align: top;
+              }
+        .headerdiv div input{
+             border: 1px solid #333;
+             margin : 0px;
+             width  : 10vw;
+             height : 2.5vh;
+             margin-top : 1vh;
+             display:block;
+              }
+        .headerdiv div a{
+              color: #ddd;
+              margin : 0px;
+              display:block;
+              margin-top : 0.5vh;
+              text-decoration: none;
+             }
+
+         #content{
+              width: 100%;
+              margin: auto;
+              padding-bottom: 1vh;
+          }
+
+        #content table{
+            width: 100%;
+            border-collapse: collapse;
+            }
+
+
+
+        p.special{
+            color: #0e385f;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 29px;
+            padding-top: 0px;
+            margin-top : 0px;
+            padding-left : 15vw;
+            width: 450px;
+            }
+
+        img.special{
+            padding-left: 10vw;
+            padding-top : 1vh;
+          }
+
+        .big{
+          font-size: 36px;
+          font-weight: bold;
+          color: #333;
+          padding-bottom : 0px;
+          margin-bottom: 0px;
+            }
+
+        .regular{
+          font-size: 20px;
+          padding : 0px;
+          color: #333;
+          margin-top: 1vh;
+
+          }
+
+         .ins{
+               color: #777;
+               height: 4vh;
+               width : 36%;
+               padding-left: 1vw;
+               border-radius: 5px;
+               border : 1px solid #bdc7d8;
+          }
+
+          .ins2{
+               color: #777;
+               height: 4vh;
+               width : 76%;
+               border-radius: 5px;
+               padding-left: 1vw;
+               border : 1px solid #bdc7d8;
+            }
+
+          .dob{
+              font-family: Helvetica, Arial, sans-serif;
+              border: 1px solid #bdc7d8;
+              height: 5vh;
+              width : 5vw;
+              }
+
+          #substr{
+              font-size: 11px;
+              width    : 316px;
+              color    :   #777;}
+
+           a{
+              text-decoration : none;
+            }
+
+         #signupbutton{
+            width: 18vw;
+            height: 6vh;
+            font-weight : bold;
+            font-size: 19px;
+            border: 1px solid;
+            border-radius: 5px;
+            color: #fff;
+            background: linear-gradient(#67ae55, #578843);
+            background-color: #69a74e;
+            box-shadow: inset 0 1px 1px #a4e388;
+            border-color: #3b6e22 #3b6e22;
+       }
+
+       .testing{
+            display: inline-block;
+       }
+
+      </style>
+   </head>
+
+   <body>
+
+<!----------------------------------Header Area---------------------------------------->
+
+
+     <div id="header">
+       <p class="headpara" >facebook</p>
+       <form class="testing" method="get" action="">
+       <div class="headerdiv">
+       <div>
+        Email or Phone
+         <input id="namef" type="text" name="namef" required />
+         </div>
+
+       <div>
+       Password
+        <input id="passf" type="password" name="passf" required />
+         <a href="">Forgotten account?</a>
+         </div>
+       </div>
+       <input style="display:inline-block; margin-top: 4.7vh; background-color:#1565C0; color: #fff; font-size: 12px;
+                     line-height: 18px; font-weight: bold; border:none;
+                     box-shadow: 1px 1px 10px #333,-1px -1px 10px #333;"
+                      type="submit" onclick="signIn()" name="sub" value="Log In" />
+      </form>
+    </div>
+
+     <!----------------------------------Content-area---------------------------------------->
+
+
+   <div id="content">
+
+    <table>
+      <tr>
+        <td width="60%">
+            <p class="special">Facebook helps you connect and share with the people in your life.</p>
+            <img class="special" src="fb1.png" alternate="facebook.png"/ >
+        </td>
+
+        <td width="40%">
+          <form method="get" action="receiver.html">
+            <p class="big">Create an Account</p>
+            <p class="regular" >Its free and always will be</p>
+
+
+           <table>
+            <tr >
+              <td style="padding-bottom: 2vh;">
+               <input id="fname" class="ins" type="text" name="fname" placeholder="First Name" required/>
+               <input id="lname" class="ins" name="lname" type="text" placeholder="Surname" required/>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding-bottom: 1vh;">
+                  <input id="email1" class="ins2" required type="text" name="email1" placeholder="Mobile No or Email Address" />
+              </td>
+
+            </tr>
+          <tr>
+              <td style="padding-bottom: 1vh;">
+                  <input id="email2" class="ins2" required type="text" name="email2" placeholder="Re-Enter Mobile No. or Email Address"/>
+              </td>
+          </tr>
+
+          <tr>
+              <td style="padding-bottom: 1vh;" >
+                  <input id="passwd" class="ins2" type="password" name="passwd" placeholder="Password" required/>
+              </td>
+           </tr>
+
+          </table>
+
+      <!-- Inner Division date of birth  -->
+
+       <div>
+          <p class="regular">Birthday</p>
+          <select id="day" class="dob" name="day">
+             <option selected>1</option><option>2</option><option>3</option><option>4</option>
+             <option>5</option><option>6</option><option>7</option><option>8</option><option>9</option>
+             <option>10</option><option>11</option><option>12</option><option>13</option><option>14</option>
+             <option>15</option><option>16</option><option>17</option><option>17</option><option>18</option>
+             <option>20</option><option>21</option><option>22</option><option>23</option><option>24</option>
+             <option>25</option><option>26</option><option>27</option><option>28</option><option>29</option>
+             <option>30</option>
+          </select>
+
+          <select id="month" class="dob" name="month">
+             <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+             <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+             <option>11</option><option>12</option>
+          </select>
+          <select id="year" class="dob" name="year">
+             <option>2000</option><option>2001</option><option>2002</option><option>2003</option><option>2004</option>
+             <option>2006</option><option>2007</option><option>2008</option>
+          </select>
+
+          <a href="">Why do I need to provide my D.O.B</a>
+          <br><br>
+          <input id="gender" type="radio" name="gender" value="Male" required/>Male
+          <input id="gender" type="radio" name="gender" value="Female" required />Female
+          <br>
+          <p id="substr">By clicking Create an account, you agree to our <a href="">Terms</a> and confirm that you have read
+                         our <a href="">Data Policy</a>, including our <a href="">Cookie</a> Use
+                         Policy. You may receive SMS message notifications from Facebook and can opt out at any time.</p>
+          <input id="signupbutton" type="submit" onclick="run()" name="create" value="Create an Account" />
+          <p><a href=""><b>Create a page</b></a> for a celebrity or a Businessman</p>
+
+        </div>
+      </form>
+       </td>
+      </tr>
+    </table>
+
+      </div>
+
+     <input type="button" value="click" onclick="signIn()" />
+   <script>
+  /*   function setup()
+     {
+             var users = ["dheeraj09","pradeep09","rooparsh09"];
+             var passwd = ["yadav09","kumar09","kalia09"];
+             var userdata = JSON.stringify(users);
+             var passdata = JSON.stringify(passwd);
+             localStorage.setItem("userdata",userdata);
+             localStorage.setItem("passdata",passdata);
+     }
+*/
+
+     function run()
+     { var f1,f2,f3,f4,f5,f6,f7,f8,f9;
+       f1 = document.getElementById("fname").value;
+       f2 = document.getElementById("lname").value;
+       f3 = document.getElementById("email1").value;
+       f4 = document.getElementById("passwd").value;
+       f5 = document.getElementById("day").value;
+       f6 = document.getElementById("month").value;
+       f7 = document.getElementById("year").value;
+       f8 = document.getElementById("gender").value;
+       f9 = document.getElementById("email2").value;
+
+       if(f3 != f9)
+       {
+         window.alert("email dont match");
+       }
+      else{
+       var data={name:f1,lname:f2,email:f3,password:f4,day:f5,month:f6,year:f7,gender:f8};
+       var str=JSON.stringify(data);
+       console.log(str);
+       console.log("all good");
+       localStorage.setItem("inputjson",str);
+     }
+     }
+
+    function signIn(){
+         var users = ["dheeraj09","pradeep09","rooparsh09"];
+         var passwd = ["yadav09","kumar09","kalia09"];
+         var userdata = JSON.stringify(users);
+         var passdata = JSON.stringify(passwd);
+         localStorage.setItem("passdata",passdata);
+         localStorage.setItem("userdata",userdata);
+
+
+
+         var name = document.getElementById("namef").value;
+         var passdf = document.getElementById("passf").value;
+         var str =localStorage.getItem("userdata");
+         var str2=localStorage.getItem("passdata");
+         var flag=0;
+         var user=JSON.parse(str);
+         var paas=JSON.parse(str2);
+         for(x in user)
+         { if(name === user[x] && passdf === paas[x])
+           {   flag=1;
+               window.alert("Login Successful");
+               window.location.href='login2.html';
+               break;
+           }
+
+           console.log(user[x]);
+           console.log(paas[x]);
+         }
+         if(flag == 0)
+         {
+           window.alert("Wrong Credentials");
+         }
+    }
+   </script>
+
+
+   </body>
+
+   </html>

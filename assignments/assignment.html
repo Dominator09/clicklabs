@@ -1,0 +1,53 @@
+<!Doctype html>
+   <html>
+        <head>
+             <script>
+             
+               
+               function checkArray(arr)
+               {
+                   var bool = arr.constructor.toString().indexOf("Array") > -1;
+                   document.getElementById("show2").innerHTML = bool; 
+                }
+
+               function replaceAll()
+                { 
+                     var str = "robert is the son of robert senior";
+                     var newstr = str.replace(/robert/g, "david");
+                     document.getElementById("show1").innerHTML = newstr;    
+                    } 
+
+               function addElement()
+               {
+                   var arr1 = [1,2,"Adidas","Nike"];
+                      arr1.splice(2,0,"reebok is good");
+                      document.getElementById("show3").innerHTML=arr1;
+                      
+               }
+             
+               function test()
+               {
+                 var array=[1,2];
+                 checkArray(array);
+                 replaceAll();
+                 addElement();  
+                       
+                }
+                
+
+
+              </script>
+
+         </head>
+
+        <body>
+         <p id="show1"></p><br>
+         <p id="show2"></p><br>
+         <p id="show3"></p><br>
+ 
+         <br><br>
+         <input type="button" onclick="test()" value="Test Functions" />
+        </body>
+
+    </html>
+

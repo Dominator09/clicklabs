@@ -1,0 +1,118 @@
+<!Doctype html>
+ <html>
+    <head>
+    <style>
+       .layout{
+          width: 24vw;
+
+          margin: auto;
+          box-shadow: 4px 4px 20px #999, -4px -4px 20px #999;
+          padding-top: 10vh;
+          margin-top: 10vh;
+        }
+
+       #inputfeild{
+          width      :100%;
+          background : white;
+          text-align : right;
+          font-size  : 3vw;
+          border     : none;
+          height     : 8vh;
+          padding    : 0 0 0 0;
+          margin     : 0 0 0 0;
+          font-family : Helvetica,cursive;
+          color    : #212121;
+
+        }
+
+       .keypad{
+           border-collapse: collapse;
+           width: 100%;
+
+          }
+
+        .keypad tr,.keypad td{
+            border: 1px solid #ccc;
+            padding: 0px;
+            height:  10vh;
+
+
+           }
+         .keypad td{
+              width: 25%;
+            }
+
+        .keypad button,.keypad input{
+            width: 100%;
+            height: 100%;
+            border: none;
+            font-family : Helvetica,cursive;
+            background-color: white;
+            font-size: 2vw;
+            color    : #212121;
+           }
+
+
+      </style>
+    </head>
+
+   <body>
+
+       <div class="layout">
+       <input id="inputfeild" type="text" name="calc" />
+          <table class="keypad">
+               <tr>
+                 <td><input type="button" value="C" class="numbers" /></td>
+                 <td><input type="button" value="+/-" class="numbers" /></td>
+                 <td><input type="button" value="%" class="numbers" /></td>
+                 <td><input type="button" value="DEL" class="numbers" /></td>
+
+               </tr>
+          <tr>
+                  <td><input type="button" value="7" class="numbers" /></td>
+                  <td><input type="button" value="8" class="numbers" /></td>
+                  <td><input type="button" value="9" class="numbers" /></td>
+                  <td><input type="button" value="/" class="numbers" /></td>
+
+               </tr>
+          <tr>
+            <td><input type="button" value="4" class="numbers" /></td>
+            <td><input type="button" value="5" class="numbers" /></td>
+            <td><input type="button" value="6" class="numbers" /></td>
+            <td><input type="button" value="*" class="numbers" /></td>
+
+               </tr>
+          <tr>
+            <td><input type="button" value="1" class="numbers" /></td>
+            <td><input type="button" value="2" class="numbers" /></td>
+            <td><input type="button" value="3" class="numbers" /></td>
+            <td><input type="button" value="-" class="numbers" /></td>
+
+               </tr>
+          <tr>
+            <td><input type="button" value="0" class="numbers" /></td>
+            <td><input type="button" value="." class="numbers" /></td>
+            <td><input type="button" value="=" class="numbers" /></td>
+            <td><input type="button" value="+" class="numbers" /></td>
+
+               </tr>
+          </table>
+        </div>
+
+
+    <script>
+
+      function setup(){
+            var inp = document.getElementById("inputfeild");
+            var numinputs = document.getElementsByClassName("numbers");
+               for(var i=0;i<numinputs.length;i++)
+                {  var x=numinputs[i].value;
+                   numinputs[i].onclick = function(){ inp.value = x;}
+                }
+      }
+
+      setup();
+
+     </script>
+     </body>
+   </html>

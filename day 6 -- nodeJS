@@ -1,0 +1,24 @@
+-----------------------------------javascript concept--------------------------------------
+
+               note :- there should be no global variables(generally except constant)
+
+              1) in javascript --- everything is an object----
+              2) javascripting is a prototyping language.
+              3) in javascript, you can edit created object properties
+                 because everthing is a child of Object() which have a property __proto
+
+              4) to preserve variable state between function use ..
+
+                 ---------Concurrency---------
+
+                 synchronous.... sequential
+
+                 in javacript, function calls are syncronous but function execution is asynchronous.
+                  javascript is not just a client side language, it is a server side
+                1) nodeJS is a framework...
+                2) nodeJs is single threaded
+
+
+             ----------callbacks are functions passed as parameter------------
+
+             javascript ---- the good parts

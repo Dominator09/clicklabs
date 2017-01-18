@@ -1,0 +1,58 @@
+<!Doctype html>
+<html>
+   <head>
+     <style>
+        .clock{
+               width: 400px; 
+               height: 200px; 
+               box-shadow: 4px 4px 20px #999, -4px -4px 20px #999; 
+               color: white; 
+               background-color:  #F44336;
+               font-size: 80px; font-family: Helvetica,sans-serif; 
+               text-align: center; 
+               padding-top: 80px; 
+               margin: auto; 
+               margin-top: 100px; 
+ 
+ 
+          }
+       
+      </style>
+     <script>
+     
+       function currunt()
+      {        
+                var dat,hr,mn,sc;
+                dat = new Date();
+                hr = dat.getHours();
+                mn = dat.getMinutes();
+                sc = dat.getSeconds();  
+                time = hr+":"+mn+":"+sc;
+             document.getElementById("clock").innerHTML = time;   
+       }
+
+      
+       function timer()
+         {    
+              
+               setInterval(currunt, 1000);
+               
+               
+         }
+      
+      timer();
+   </script>       
+    </head>
+
+  <body>
+     <div id="clock" style="width: 400px; height: 200px; 
+                            box-shadow: 4px 4px 20px #999, -4px -4px 20px #999; color: white; background-color:  #F44336;
+                            font-size: 80px; font-family: Helvetica,sans-serif; text-align: center; 
+                            padding-top: 80px; margin: auto; margin-top: 100px; ">
+      </div>
+          
+   
+  
+   </body>
+
+  </html>

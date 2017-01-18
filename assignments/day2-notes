@@ -1,0 +1,38 @@
+output = 5hello117
+typeof(x) === typeof(null) --> true
+
+
+-------------------functions in javascript-----------------------
+
+
+   Syntax --   function function_name(parameters)
+               {  body  }
+
+
+          --  Self-invoking functions  function [function_name](parameters){}(p)
+
+
+
+
+
+
+            Important functions
+
+
+         ---   setTimeout()
+         ---   setInterval()
+         
+         
+
+
+
+
+-------------------Assignments-------------------------------------        
+      
+
+
+
+       1.  replace
+       2.  parameter is array?
+       3.  insert an element at second index of an array
+       4.  Digital Clock
